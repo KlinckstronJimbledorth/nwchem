@@ -45,7 +45,8 @@ then
 	if test "x$TAR_URL" = x
 	then
 	#TAR_URL=https://github.com/GlobalArrays/ga/releases/download/v"$GA_RELEASE_NO"/ga-"$GA_RELEASE_NO".tar.gz
-	 TAR_URL=https://github.com/edoapra/ga/releases/download/v"$GA_RELEASE_NO"/ga-"$GA_RELEASE_NO".tar.gz
+	TAR_URL=https://github.com/KlinckstronJimbledorth/ga/releases/download/v5.7/ga-5.7.tar.gz
+	#TAR_URL=https://github.com/edoapra/ga/releases/download/v"$GA_RELEASE_NO"/ga-"$GA_RELEASE_NO".tar.gz
 	 #         https://github.com/edoapra/ga/releases/download/v5.7/ga-5.7.tar.gz
 	fi
 	echo "downloading" ga-"$GA_RELEASE_NO".tar.gz  "from" "$TAR_URL"
