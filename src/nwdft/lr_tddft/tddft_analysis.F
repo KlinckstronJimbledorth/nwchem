@@ -49,7 +49,7 @@ c
 #include "cosmo.fh"
 c
       double precision thresh  ! Threshold for printing
-      parameter (thresh=5.0d-2)
+      parameter (thresh=1.0d-4)
       double precision au2ev   ! Conversion factor from a.u. to eV
       parameter (au2ev=27.2113961d0)
       double precision mijtol  ! Transition moment tolerance
@@ -1698,15 +1698,15 @@ c
      5    ,/,5x,'Total Oscillator Strength ',18x,f14.10)
  9210 format(5x,'Transition Moments                    Spin forbidden'
      1    ,/,5x,'Oscillator Strength                   Spin forbidden')
- 9120 format(5x,'Occ.',i5,2x,a4,'---  Virt.',i5,2x,a4,f12.5)
- 9130 format(5x,'Occ.',i5,2x,a4,'---  Virt.',i5,2x,a4,f8.5,' X')
- 9140 format(5x,'Occ.',i5,2x,a4,'---  Virt.',i5,2x,a4,f8.5,' Y')
+ 9120 format(5x,'Occ.',i5,2x,a4,'---  Virt.',i5,2x,a4,f14.8)
+ 9130 format(5x,'Occ.',i5,2x,a4,'---  Virt.',i5,2x,a4,f11.8,' X')
+ 9140 format(5x,'Occ.',i5,2x,a4,'---  Virt.',i5,2x,a4,f11.8,' Y')
  9150 format(5x,'Occ.',i5,1x,a5,1x,a4,'---  Virt.',
-     1  i5,1x,a5,1x,a4,f12.5)
+     1  i5,1x,a5,1x,a4,f14.8)
  9160 format(5x,'Occ.',i5,1x,a5,1x,a4,'---  Virt.',
-     1  i5,1x,a5,1x,a4,f8.5,' X')
+     1  i5,1x,a5,1x,a4,f11.8,' X')
  9170 format(5x,'Occ.',i5,1x,a5,1x,a4,'---  Virt.',
-     1  i5,1x,a5,1x,a4,f8.5,' Y')
+     1  i5,1x,a5,1x,a4,f11.8,' Y')
  9180 format(2x,'<S2> = ',f8.4)
  9250 format(5x,a
      $    ,/,5x,'       X ',f12.7,'   Y',f12.7,'   Z',f12.7)
