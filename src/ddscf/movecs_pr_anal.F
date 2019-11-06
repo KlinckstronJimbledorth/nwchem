@@ -199,14 +199,14 @@ c
  22         format(1x,2('  Bfn.  Coefficient  Atom+Function  ',5x))
             write(LuOut,23)
  23         format(1x,2(' ----- ------------  ---------------',5x))
-            do klo = 0, min(n-1,howmany9), 2
+            do klo = 0, min(n-1,10000), 2
                khi = min(klo+1,n-1)
                write(LuOut,2) (
      $              int_mb(k_list+k)+1, 
      $              dbl_mb(k_vecs+int_mb(k_list+k)),
      $              (byte_mb(k_tags+int_mb(k_list+k)*16+m),m=0,15), 
      $              k = klo,khi)
- 2             format(1x,2(i5,2x,f12.6,2x,16a1,4x))
+ 2             format(1x,2(i5,2x,f14.8,2x,16a1,4x))
             enddo
             write(LuOut,*)
          enddo
